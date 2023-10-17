@@ -11,7 +11,7 @@
 }
 
 body {
-    background-color: rgb(35, 33, 39)
+    background-color: rgb(35, 33, 39);
 }
 
 h1 {
@@ -55,9 +55,18 @@ h1 {
     transform: scale(0.99)
  }
 
- .list {
-    color: white;
-    line-height: 1.5em;
+.list {
+   color: white;
+   line-height: 1.5em;
+   width: 760px;
+ }
+
+ .text {
+   max-width: 700px;
+   overflow: hidden;
+   display:inline-block;
+   text-overflow: ellipsis;
+   white-space: normal;
  }
 
  .btn1 {
@@ -88,3 +97,89 @@ h1 {
  .btn2:active {
     transform: scale(0.97)
  }
+
+ @media (max-width: 1000px) {
+   .list {
+      width: 700px;
+   }
+   .text {
+      max-width: 640px;
+    }
+}
+
+@media (max-width: 900px) {
+   .list {
+      width: 660px;
+   }
+   .text {
+      max-width: 600px;
+    }
+    .container {
+      padding: 10px 40px;
+    }
+}
+
+@media (max-width: 800px) {
+   .list {
+      width: 560px;
+   }
+   .text {
+      max-width: 500px;
+    }
+    .container {
+      font-size: 16px;
+    }
+}
+
+@media (max-width: 700px) {
+   .list {
+      width: 400px;
+   }
+   .text {
+      max-width: 340px;
+    }
+    .container {
+      padding: 10px 20px;
+      font-size: 15px;
+    }
+}
+
+@media (max-width: 500px) {
+   .list {
+      width: 250px;
+   }
+   .text {
+      max-width: 190px;
+    }
+    .container {
+      font-size: 14px;
+    }
+}
+
+@media (max-width: 350px) {
+   .form-control1::placeholder {
+      font-size: 13px;
+   }
+   h1 {
+   font-size: 35px;
+   }
+   .list {
+      width: 230px;
+   }
+   .text {
+      max-width: 170px;
+    }
+    .container {
+      padding: 0px 10px;
+      font-size: 14px;
+    }
+}
+
+@media (max-width: 300px) {
+   .list {
+      width: 200px;
+   }
+   .text {
+      max-width: 140px;
+    }
+}
